@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>The failure cases</title>
@@ -34,5 +34,96 @@
 </head>
 <body>
     <img src="WeirdShrunkDog.jpg" alt="Weird shrunk Dog">
+</body>
+</html>
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The failure cases</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f7f7f7;
+            text-align: center;
+        }
+        .gallery-row {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* 底边对齐 */
+        }
+        .gallery-row h2 {
+            font-size: 24px;
+            color: #333;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .photo {
+            margin: 0 10px;
+            display: inline-block;
+            position: relative;
+        }
+        .photo img {
+            vertical-align: bottom; /* 确保图片底部对齐 */
+            max-width: 100%; /* 保证图片不会超过其容器宽度 */
+            height: auto; /* 保持图片原始比例 */
+        }
+        .photo-caption {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片排 1 -->
+<div class="gallery-row">
+    <h2> Failure cases </h2>
+    <div class="photo">
+        <img src="FailureShrunkDog.jpg" alt="Failure Shrunk Dog">
+        <div class="photo-caption"> Failure Shrunk Dog </div>
+    </div>
+    <div class="photo">
+        <img src="WeirdShrunkDog.jpg" alt="Weird shrunk Dog">
+        <div class="photo-caption"> Weird shrunk Dog </div>
+    </div>
+</div>
+
+<!-- 照片排 2 -->
+<div class="gallery-row">
+    <h2> Good cases </h2>
+    <div class="photo">
+        <img src="shrunkTemple.jpg" alt="well shrunk temple">
+        <div class="photo-caption"> well shrunk temple </div>
+    </div>
+    <div class="photo">
+        <img src="shrunkBallons.jpg" alt="well shrunk ballons">
+        <div class="photo-caption"> well shrunk ballons </div>
+    </div>
+</div>
+
+<!-- 照片排 3 -->
+<div class="gallery-row">
+    <h2> greay scaled energy map </h2>
+    <div class="photo">
+        <img src="grayEnergy.jpg" alt="greay scaled energy map of dog">
+        <div class="photo-caption"> greay scaled energy map of dog </div>
+    </div>
+    <div class="photo">
+        <img src="goodShrunkDog_1.jpg" alt="well shrunk dog">
+        <div class="photo-caption"> well shrunk dog </div>
+    </div>
+</div>
+
+<!-- 复制上面的 .gallery-row 块来添加更多的照片排，记得更改标题和图片路径 -->
+
 </body>
 </html>
