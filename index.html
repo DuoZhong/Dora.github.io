@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pictures showing</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f7f7f7;
+            text-align: center;
+        }
+        .gallery-row {
+            margin-bottom: 40px;
+        }
+        .gallery-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* 照片底边对齐 */
+            gap: 20px; /* 照片之间的间隙 */
+        }
+        .photo {
+            display: inline-block;
+            position: relative;
+        }
+        .photo img {
+            vertical-align: bottom; /* 确保图片底部对齐 */
+            height: auto; /* 保持图片原始比例 */
+        }
+        .photo-caption {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 照片排 1 -->
+<div class="gallery-row">
+    <div class="gallery-title">Failure cases</div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="FailureShrunkDog.jpg" alt="Failure Shrunk Dog">
+            <div class="photo-caption">Failure Shrunk Dog</div>
+        </div>
+        <div class="photo">
+            <img src="WeirdShrunkDog3.jpg" alt="Weird shrunk Dog">
+            <div class="photo-caption">Weird shrunk Dog</div>
+        </div>
+    </div>
+</div>
+
+<!-- 照片排 2 -->
+<div class="gallery-row">
+    <div class="gallery-title">Good cases</div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="shrunkTemple.jpg" alt="well shrunk temple">
+            <div class="photo-caption">well shrunk temple</div>
+        </div>
+        <div class="photo">
+            <img src="shrunkBallons.jpg" alt="well shrunk ballons">
+            <div class="photo-caption">well shrunk ballons</div>
+        </div>
+    </div>
+</div>
+
+<!-- 照片排 3 -->
+<div class="gallery-row">
+    <div class="gallery-title">Gray scaled energy map</div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="greyEnergy.jpg" alt="gray scaled energy map of dog">
+            <div class="photo-caption">gray scaled energy map of dog</div>
+        </div>
+        <div class="photo">
+            <img src="goodShrunkDog_1.jpg" alt="well shrunk dog">
+            <div class="photo-caption">well shrunk ballons</div>
+        </div>
+    </div>
+</div>
+
+<!-- 照片排 4 -->
+<div class="gallery-row">
+    <div class="gallery-title">Other temp images befor transpose</div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="other_transpose_image2.jpg" alt="before transpose">
+            <div class="photo-caption">before transpose</div>
+        </div>
+        <div class="photo">
+            <img src="otherShrunkdDog2.jpg" alt="output befor transpose">
+            <div class="photo-caption">output befor transpose</div>
+        </div>
+    </div>
+</div>
+
+<!-- 照片排 5 -->
+<div class="gallery-row">
+    <div class="gallery-title">My own pictures</div>
+    <div class="photo-container">
+        <div class="photo">
+            <img src="Dora_2.jpg" alt="my own original picture">
+            <div class="photo-caption">my own original picture</div>
+        </div>
+        <div class="photo">
+            <img src="shrunkDora_2.jpg" alt="my own shrunk picture">
+            <div class="photo-caption">my own shrunk picture</div>
+        </div>
+    </div>
+</div>
+
+<!-- 复制上面的 .gallery-row 块来添加更多的照片排，记得更改标题和图片路径 -->
+
+</body>
+</html>
